@@ -9,7 +9,7 @@ function draw(){
     var h=hour();
     var m=minute();
     var s=second();
-
+    h=h%12;
     strokeWeight(8);
     stroke(199,103,99);
     noFill();
@@ -17,10 +17,11 @@ function draw(){
     arc(250, 250, 380, 380, 0-HALF_PI, ha-HALF_PI);
 
 
+
     stroke(103,153,150);
     var ma=map(m,0,60,0,360);
-    arc(250, 250, 400, 400, 0-HALF_PI, ma-HALF_PI);
-
+    arc(250, 250, 400, 400, 0+3*HALF_PI, m);
+    console.log(m,ma);
 
     stroke(153,103,199);
     var sa=map(s,0,60,0,360);
