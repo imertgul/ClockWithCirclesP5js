@@ -1,11 +1,3 @@
 # ClockWithCirclesP5js
 
-
-
-
-
-
-
-Online test
-
-http://mertgul.com.tr
+P5.js Playground
